@@ -25,9 +25,7 @@ body {
   padding-right: 15px;
   padding-top: 0;
   padding-bottom: 0;
-  margin: o auto;
-
-  background-color: yellow;
+  margin: 0 auto;
 }
 
 h1,
@@ -54,8 +52,8 @@ p {
 .header {
   margin: 0;
   background: #ffffff;
-  outline: solid teal;
 }
+
 .header-links {
   display: block;
   font-weight: 500;
@@ -74,15 +72,10 @@ p {
 
 .address {
   font-style: normal;
-
-
-
-  outline: 2px solid red;
 }
+
 .navigation {
 
-
-  outline: 2px solid black;
 }
 
 .address-list .address-links {
@@ -103,8 +96,6 @@ p {
   text-align: center;
   margin: 0;
   background: #2e2f42;
-
-  outline: solid tomato;
 }
 
 .hero-name {
@@ -147,7 +138,7 @@ p {
   color: var(--btn-text-color);
   border-radius: 4px;
   border-color: #e7e9fc;
-  padding: 12px, 24px;
+  padding: 12px 24px;
   text-align: center;
 }
 
@@ -167,10 +158,6 @@ p {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
-  margin-top: 24px;
-  margin-bottom: 24px;
-
-  outline: solid green;
 }
 
 .logo-studio-header {
@@ -195,6 +182,14 @@ p {
   color: #f4f4fd;
 }
 
+.section-benefits {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.benefits-list {
+}
+
 .benefits-items-name {
   font-family: "Roboto";
   font-style: normal;
@@ -205,6 +200,7 @@ p {
   color: #2e2f42;
 }
 .benefits-text {
+  margin-top: 8px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -223,12 +219,21 @@ p {
   color: #2e2f42;
 }
 
+.services-list {
+  margin-top: 72px;
+}
+
 .section-services {
-  background: #e7e9fc;
+  padding-bottom: 120px;
+
 }
 
 .section-team {
   background: #f4f4fd;
+}
+
+.team-list {
+  margin-top: 72px;
 }
 
 .team-title {
@@ -242,10 +247,12 @@ p {
 }
 
 .team-list-items {
+  padding-bottom: 32px;
   background-color: #ffffff;
 }
 
 .team-names {
+  margin-top: 32px;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -255,6 +262,7 @@ p {
 }
 
 .team-positions {
+  margin-top: 8px;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -264,10 +272,13 @@ p {
 }
 
 .footer {
+  padding-top: 100px;
+  padding-bottom: 100px;
   background: #2e2f42;
 }
 
 .footer-text {
+  margin-top: 16px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -276,10 +287,25 @@ p {
 }
 
 .main-portfolio {
-  background: #e5e5e5;
+  background: #FFFFFF;
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+
+.list-btn {
+}
+
+.portfolio-list {
+  margin-top: 72px;
+}
+
+.portfolio-list-icons {
+  padding-bottom: 32px;
+  border: 1px solid #E7E9FC;
 }
 
 .portfolio-title-items {
+  margin-top: 32px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -288,6 +314,7 @@ p {
 }
 
 .portfolio-list-text {
+  margin-top: 8px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
