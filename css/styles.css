@@ -20,7 +20,7 @@ body {
 }
 
 .container {
-  max-width: 1158 px;
+  max-width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 0;
@@ -41,17 +41,28 @@ p {
 }
 
 .list {
-  margin: 0 px;
-  padding: 0 px;
+  margin: 0px;
+  padding: 0px;
   list-style: none;
 }
 
 .link {
   text-decoration: none;
 }
+
+.img {
+  display: block;
+}
+
 .header {
   margin: 0;
   background: #ffffff;
+}
+
+.header-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
 }
 
 .header-links {
@@ -78,6 +89,13 @@ p {
 
 }
 
+.address-list{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 40px;
+}
+
 .address-list .address-links {
   font-style: normal;
   font-weight: 400;
@@ -99,6 +117,8 @@ p {
 }
 
 .hero-name {
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 48px;
   font-weight: 700;
   font-size: 56px;
@@ -188,6 +208,14 @@ p {
 }
 
 .benefits-list {
+  display: flex;
+  align-items: flex-start;
+  flex-basis: calc((100% - 3*24px) / 4);
+  gap: 24px;
+}
+
+.benefits-items {
+  border: 2px solid tomato;
 }
 
 .benefits-items-name {
@@ -220,6 +248,9 @@ p {
 }
 
 .services-list {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
   margin-top: 72px;
 }
 
@@ -233,7 +264,12 @@ p {
 }
 
 .team-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
   margin-top: 72px;
+  padding-bottom: 120px;
 }
 
 .team-title {
@@ -293,15 +329,25 @@ p {
 }
 
 .list-btn {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 24px;
 }
 
 .portfolio-list {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
   margin-top: 72px;
 }
 
 .portfolio-list-icons {
+  flex-basis: calc((100% - 48px) / 3);
   padding-bottom: 32px;
-  border: 1px solid #E7E9FC;
+  border-color: #E7E9FC;
 }
 
 .portfolio-title-items {
@@ -320,4 +366,114 @@ p {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+}
+
+
+
+
+/*test1*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #f9f9fd;
+}
+
+.page-header {
+  /*  Making header.page-header a Flex-container and aligning elements  */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #607d8b;
+  border-radius: 4px;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+.logo {
+  padding: 15px;
+  border-radius: 4px;
+  background-color: #ff5722;
+  text-decoration: none;
+  color: #fff;
+}
+
+.menu {
+  display: flex;
+  gap: 8px;
+  padding: 15px;
+  margin: 0;
+  list-style: none;
+  border-radius: 4px;
+  background-color: #2196f3;
+}
+
+.menu .link {
+  display: block;
+  padding: 10px;
+  border-radius: 4px;
+  text-decoration: none;
+  color: black;
+  background-color: #fff;
+}
+
+.menu .link:hover,
+.menu .link:focus,
+.logo:hover,
+.logo:focus {
+  text-decoration: underline;
+}
+
+
+/*test2*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  line-height: 1.5;
+  background-color: #edf2f7;
+}
+
+/* .container {
+  max-width: 1200px;
+  padding: 5px;
+  margin-left: auto;
+  margin-right: auto;
+} */
+
+.card-set {
+  display: flex;
+  /* Make a flex container multiline */
+  flex-wrap: wrap;
+  /* Set gap between rows and columns */
+  gap: 10px;
+  padding: 0;
+  list-style: none;
+}
+
+.item {
+  /*  Set the width of the elements  */
+  flex-basis: calc((100% - 20px) / 3);
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+.item h2 {
+  margin-top: 0;
+  font-size: 20px;
+}
+
+.item p {
+  margin: 0;
 }
