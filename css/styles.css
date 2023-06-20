@@ -59,21 +59,32 @@ p {
   background: #ffffff;
 }
 
-.header-list {
+.header-nav {
   display: flex;
   align-items: center;
-  gap: 40px;
 }
 
+.header-list {
+  display: flex;
+  margin-left: 76px;
+}
+
+.header-items + .header-items {
+  margin-left: 40px;
+}
+
+/* .header-items:last-child {
+  margin-right: 0px;
+} */
+
 .header-links {
-  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  padding-top: 24 px;
-  padding-bottom: 24px;
 }
 
 .header-links:hover,
@@ -81,19 +92,32 @@ p {
   color: #404bbf;
 }
 
+.header-items {
+  padding: 24px 0px;
+}
+
 .address {
+  margin-left: auto;
   font-style: normal;
 }
 
 .navigation {
-
+  display: flex;
+  align-items: center;
 }
 
 .address-list{
   display: flex;
-  align-items: center;
-  justify-content: flex-end;
   gap: 40px;
+}
+
+.address-items {
+
+}
+
+.address-links {
+  display: block;
+  padding: 24px 0px;
 }
 
 .address-list .address-links {
@@ -114,6 +138,10 @@ p {
   text-align: center;
   margin: 0;
   background: #2e2f42;
+}
+
+.hero-box {
+
 }
 
 .hero-name {
@@ -209,12 +237,11 @@ p {
 
 .benefits-list {
   display: flex;
-  align-items: flex-start;
-  flex-basis: calc((100% - 3*24px) / 4);
   gap: 24px;
 }
 
 .benefits-items {
+  flex-basis: calc((100% - 3*24px) / 4);
   border: 2px solid tomato;
 }
 
@@ -227,6 +254,7 @@ p {
   letter-spacing: 0.02em;
   color: #2e2f42;
 }
+
 .benefits-text {
   margin-top: 8px;
   font-family: "Roboto";
@@ -249,9 +277,12 @@ p {
 
 .services-list {
   display: flex;
-  align-items: flex-start;
   gap: 24px;
   margin-top: 72px;
+}
+
+.services-list-items {
+  width: calc((100% - 48px) / 3);
 }
 
 .section-services {
@@ -260,7 +291,16 @@ p {
 }
 
 .section-team {
+  padding-top: 120px;
   background: #f4f4fd;
+}
+
+.container-team {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 32px 16px;
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-list {
@@ -283,12 +323,13 @@ p {
 }
 
 .team-list-items {
-  padding-bottom: 32px;
   background-color: #ffffff;
+  width: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-names {
-  margin-top: 32px;
+  margin-bottom: 8px;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -298,7 +339,6 @@ p {
 }
 
 .team-positions {
-  margin-top: 8px;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -347,7 +387,11 @@ p {
 .portfolio-list-icons {
   flex-basis: calc((100% - 48px) / 3);
   padding-bottom: 32px;
-  border-color: 1px solid #E7E9FC;
+  border-bottom: 1px solid #E7E9FC;
+}
+
+.container-portfolio-items {
+
 }
 
 .portfolio-title-items {
