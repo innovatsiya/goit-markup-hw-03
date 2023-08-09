@@ -128,8 +128,8 @@ img {
   gap: 40px;
 }
 
-.address-items {}
-
+.address-items {
+}
 .address-links {
   display: block;
   padding: 24px 0px;
